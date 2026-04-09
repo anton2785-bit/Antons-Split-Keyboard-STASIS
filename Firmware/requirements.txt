@@ -1,0 +1,34 @@
+# CircuitPython dependencies
+# Copy these .mpy files from the CircuitPython library bundle
+# into the /lib folder on your XIAO's CIRCUITPY drive.
+#
+# Download bundle from: https://circuitpython.org/libraries
+# Match the bundle version to your CircuitPython version (8.x or 9.x)
+#
+# Required files (left half only — right half needs none):
+#
+#   /lib/adafruit_hid/                ← entire folder
+#       __init__.mpy
+#       keyboard.mpy
+#       keyboard_layout_us.mpy
+#       keycode.mpy
+#
+# File layout on LEFT half CIRCUITPY drive:
+#   CIRCUITPY/
+#     boot.py                 ← enables USB HID at boot
+#     code.py                 ← main left-half firmware
+#     lib/
+#       adafruit_hid/
+#         __init__.mpy
+#         keyboard.mpy
+#         keyboard_layout_us.mpy
+#         keycode.mpy
+#
+# File layout on RIGHT half CIRCUITPY drive:
+#   CIRCUITPY/
+#     code.py                 ← right_half.py renamed to code.py
+#     (no lib folder needed)
+#
+# CircuitPython version: 8.x or 9.x
+# Download for XIAO nRF52840:
+#   https://circuitpython.org/board/Seeed_XIAO_nRF52840/
