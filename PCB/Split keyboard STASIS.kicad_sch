@@ -1,0 +1,114 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "78f5dfbd-b1d3-4ed3-a442-94d102ff23fc")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 144.78 63.5)
+		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0e771e51-b071-4869-951e-ea685fa470d3")
+		(property "Sheetname" "right"
+			(at 144.78 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "half.kicad_sch"
+			(at 144.78 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 144.78 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Split keyboard STASIS"
+				(path "/78f5dfbd-b1d3-4ed3-a442-94d102ff23fc"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 119.38 63.5)
+		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "43becceb-92ed-4f1c-b1ee-42d4f6ceb2d0")
+		(property "Sheetname" "left"
+			(at 119.38 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "half.kicad_sch"
+			(at 119.38 74.2446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 119.38 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Split keyboard STASIS"
+				(path "/78f5dfbd-b1d3-4ed3-a442-94d102ff23fc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

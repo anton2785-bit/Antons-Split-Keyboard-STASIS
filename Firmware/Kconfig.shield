@@ -1,0 +1,28 @@
+# Kconfig.shield
+
+config SHIELD_SPLITKEY38_LEFT
+    def_bool $(shields_list_contains,splitkey38_left)
+
+config SHIELD_SPLITKEY38_RIGHT
+    def_bool $(shields_list_contains,splitkey38_right)
+
+if SHIELD_SPLITKEY38_LEFT || SHIELD_SPLITKEY38_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "SplitKey38"
+
+config ZMK_SPLIT
+    default y
+
+if SHIELD_SPLITKEY38_LEFT
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+endif
+
+config ZMK_BLE
+    default y
+
+config ZMK_BATTERY_REPORTING
+    default y
+
+endif

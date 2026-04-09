@@ -1,0 +1,97 @@
+/*
+ * SplitKey38 — ZMK keymap
+ * MCU:    Seeed XIAO nRF52840
+ * Layout: 5 cols × 4 rows per side (rows R1-R4)
+ *         R1-R3 = 5 keys each, R4 = 4 keys (thumb cluster)
+ *         Total: 19 keys per side, 38 keys combined
+ *
+ * Matrix (left side, right is mirror):
+ *   R1: SW1  SW3  SW6  SW7  SW9     → row 0, cols 0-4
+ *   R2: SW11 SW13 SW15 SW17 SW19    → row 1, cols 0-4
+ *   R3: SW21 SW23 SW25 SW27 SW29    → row 2, cols 0-4
+ *   R4: SW31 SW33 SW35 SW37         → row 3, cols 0-3 (col 4 = KC_NO)
+ *
+ * Diodes: 1N4148W, COL2ROW
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define BASE  0
+#define NAV   1
+#define SYM   2
+#define BT    3
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        /* ── BASE ─────────────────────────────────────────────────── */
+        base_layer {
+            label = "Base";
+            bindings = <
+        //  col0      col1      col2      col3      col4
+        //  ────────────────────────────────────────────── LEFT
+            &kp TAB   &kp Q     &kp W     &kp E     &kp R
+            &kp ESC   &kp A     &kp S     &kp D     &kp F
+            &kp LSHFT &kp Z     &kp X     &kp C     &kp V
+                      &kp LCTL  &kp LGUI  &kp LALT  &kp SPACE
+        //  ────────────────────────────────────────────── RIGHT
+            &kp T     &kp Y     &kp U     &kp I     &kp O
+            &kp G     &kp H     &kp J     &kp K     &kp L
+            &kp B     &kp N     &kp M     &kp COMMA &kp DOT
+            &kp RET   &mo NAV   &mo SYM   &kp RSHFT
+            >;
+        };
+
+        /* ── NAV ──────────────────────────────────────────────────── */
+        nav_layer {
+            label = "Nav";
+            bindings = <
+            &trans    &trans    &trans    &trans    &trans
+            &trans    &trans    &trans    &trans    &trans
+            &trans    &trans    &trans    &trans    &trans
+                      &trans    &trans    &trans    &trans
+
+            &trans    &kp PG_UP &kp HOME  &kp UP    &kp END
+            &trans    &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT
+            &trans    &trans    &kp INS   &kp DEL   &kp BSPC
+            &trans    &trans    &trans    &trans
+            >;
+        };
+
+        /* ── SYM ──────────────────────────────────────────────────── */
+        sym_layer {
+            label = "Sym";
+            bindings = <
+            &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4
+            &trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR
+            &trans    &trans    &trans    &trans    &trans
+                      &trans    &trans    &trans    &trans
+
+            &kp N5    &kp N6    &kp N7    &kp N8    &kp N9
+            &kp PRCNT &kp CARET &kp AMPS  &kp STAR  &kp N0
+            &trans    &kp LBKT  &kp RBKT  &kp MINUS &kp EQUAL
+            &trans    &trans    &trans    &trans
+            >;
+        };
+
+        /* ── BT ───────────────────────────────────────────────────── */
+        bt_layer {
+            label = "BT";
+            bindings = <
+            &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+            &trans     &trans       &trans        &trans        &trans
+            &trans     &trans       &trans        &trans        &trans
+                       &trans       &trans        &trans        &trans
+
+            &trans    &trans    &trans    &trans    &trans
+            &trans    &trans    &trans    &trans    &trans
+            &trans    &trans    &trans    &trans    &trans
+            &trans    &trans    &trans    &trans
+            >;
+        };
+    };
+};
