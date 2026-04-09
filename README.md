@@ -4,23 +4,29 @@
 
 * 
 ---
-## Why i made this project/hackpad
+## Why i made this project/split keyboard
 
-* 
-  ---
+* I wanted to have a small portable keyboard that I can still use for typing and to be compact. 
+---
   ## Images
   * This is an image of the schematic:
-  * 
+  * <img width="517" height="324" alt="Schematic left_right" src="https://github.com/user-attachments/assets/53c80aa9-dcd2-4882-acea-2b71bbe0b9c4" />
+
   * This is the PCB:
-  * 
+  * <img width="593" height="304" alt="PCB" src="https://github.com/user-attachments/assets/9fedeec0-e9cb-4ccd-b725-9369ba1d4189" />
+
   * The 3D model of the PCB:
-  * 
+  * <img width="559" height="339" alt="3D assembly" src="https://github.com/user-attachments/assets/0edbb38a-a3b7-4d30-84f3-92c545f9b855" />
+
  
   ---
   
   ## Assembly
 
-* a
+* First I need to soulder everything to the PCB
+* Then I need to upload a test code that will let me see what switch is what signals.
+* After that I upload the real code and I am happy to use it afterwards.
+  
   ---
   
  ## BOM
