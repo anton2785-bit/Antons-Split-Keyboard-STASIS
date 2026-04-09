@@ -1,8 +1,7 @@
 # Antons-Split-Keyboard-STASIS
 ---
 ## What is this project
-
-* 
+* This is a split keyboard. That means that it has 2 separarate parts   that are conected to the PC via bluethooth. This allows them to have separate layouts and to have the opportunity to be in different places whiie typing. 
 ---
 ## Why i made this project/split keyboard
 
