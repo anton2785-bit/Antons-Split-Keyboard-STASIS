@@ -1,0 +1,7 @@
+Name,Purpose,Quantity,Total Cost (USD),Link,Distributor
+"keycaps","makes the typing experience better",1,16.68,"https://www.aliexpress.com/item/1005010519485476.html?spm=a2g0o.detail.0.0.447aYqskYqskCL&mp=1&pdp_npi=6%40dis%21USD%21USD%2010.45%21USD%204.23%21%21USD%204.23%21%21%21%40211b876717755101617652544e03af%2112000052676754450%21ct%21BG%217453050691%21%211%210%21","Aliexpress"
+"resistors","resists",1,4.32,"https://www.aliexpress.com/item/1005010519485476.html?spm=a2g0o.detail.0.0.447aYqskYqskCL&mp=1&pdp_npi=6%40dis%21USD%21USD%2010.45%21USD%204.23%21%21USD%204.23%21%21%21%40211b876717755101617652544e03af%2112000052676754450%21ct%21BG%217453050691%21%211%210%21","Aliexpress"
+"gateron hotswap modules","Making the switches hotswapable",1,7.00," https://www.gateron.com/products/gateron-low-profile-switch-hot-swap-pcb-socket?VariantsId=10234","Gateron"
+"gateron switches","pushing buttons",2,19.60,"https://www.gateron.com/products/gateron-ks-33-low-profile-20-banana-switch?VariantsId=10734","Gateron"
+"PCB","The place to soulder/hold everything",1,35.00,"","JLCPCB"
+"Seed Studio XIAO nrf52840","The brain",2,34.00,"https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html","Seed Studio"
