@@ -17,7 +17,7 @@
   * The 3D model of the PCB:
   * <img width="559" height="339" alt="3D assembly" src="https://github.com/user-attachments/assets/0edbb38a-a3b7-4d30-84f3-92c545f9b855" />
   * The case with half of the keyboard:
-  * <img width="1644" height="1237" alt="Case with half of the keyboard" src="https://github.com/user-attachments/assets/ac32d2b8-17f2-435c-9c2c-b091cdf111e4" />
+  * <img width="644" height="337" alt="Case with half of the keyboard" src="https://github.com/user-attachments/assets/ac32d2b8-17f2-435c-9c2c-b091cdf111e4" />
 
 
  
@@ -27,6 +27,7 @@
 
 * First I need to soulder everything to the PCB
 * Then I need to upload a test code that will let me see what switch is what signals.
+* Before it being done you need to put the now done assembly into the case. 
 * After that I upload the real code and I am happy to use it afterwards.
   
   ---
